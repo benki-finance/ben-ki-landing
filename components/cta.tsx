@@ -14,27 +14,29 @@ export default function Cta() {
     const emailInput = e.currentTarget[0] as HTMLInputElement;
     const email = emailInput.value;
 
-    const formData = new FormData();
-    formData.append('entry.1228782470', email);
-    console.log(formData);
+    if (email.length < 3) {
+      const formData = new FormData();
+      formData.append('entry.1228782470', email);
+      console.log(formData);
 
-    try {
-      const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfQNFC_gSYRQj2Zf1DeIDre-Vbw1-huHR8McuK6NRzSbnwF3w/formResponse', {
-        method: 'POST',
-        body: formData,
-      });
+      try {
+        const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfQNFC_gSYRQj2Zf1DeIDre-Vbw1-huHR8McuK6NRzSbnwF3w/formResponse', {
+          method: 'POST',
+          body: formData,
+        });
 
-      if (response.ok) {
-        console.log('Data submitted successfully!');
-      } else {
-        console.error('Failed to submit data:', response.statusText);
+        if (response.ok) {
+          console.log('Data submitted successfully!');
+        } else {
+          console.error('Failed to submit data:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error:', error);
       }
-    } catch (error) {
-      console.error('Error:', error);
-    }
 
-    setButtonText('Submitted');
-    setFormSubmitted(true);
+      setButtonText('Submitted');
+      setFormSubmitted(true);
+    }
   };
 
   return (
