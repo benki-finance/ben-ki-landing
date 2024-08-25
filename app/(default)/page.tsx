@@ -13,9 +13,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="sm:scale-40 md:scale-70 lg:scale-100">
-        <BusinessCategories />
-      </div>
+      <BusinessCategories />
       {/* <FeaturesPlanet /> */}
       <Zigzag />
       <Cta />
