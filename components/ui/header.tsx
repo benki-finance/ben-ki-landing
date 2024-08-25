@@ -34,7 +34,9 @@ export default function Header() {
               <ul className="flex flex-1 items-center justify-end gap-3">
                 <li>
                   <Link
-                    href="/signin"
+                    href="#waitlist"
+                    // TODO: add real auth  
+                    // href="/signin"
                     className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
                   >
                     Login
@@ -42,7 +44,9 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/signup"
+                    href="#waitlist"
+                    // TODO: add real auth
+                    // href="/signup"
                     className="btn-sm bg-gray-800 text-gray-200 shadow hover:bg-gray-900"
                   >
                     Register
