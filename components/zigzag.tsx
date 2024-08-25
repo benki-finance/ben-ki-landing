@@ -11,7 +11,7 @@ export default function Zigzag() {
           {/* Items */}
           <div className="grid gap-20">
 
-            {/* AI Assistant */}
+            {/* CIM DRAFT TEMPLATE VIEW */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
@@ -39,7 +39,7 @@ export default function Zigzag() {
               </div>
             </div>
 
-            {/* Drive Dashboard */}
+            {/* HOME DASHBOARD */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
