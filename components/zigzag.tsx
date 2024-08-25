@@ -32,7 +32,7 @@ export default function Zigzag() {
                       <svg className="w-3 h-3 fill-current text-emerald-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Harmonize your expertise and AI with a living memo that learns with every adjustment</span>
+                      <span>Harmonize your expertise with AI to create a living memo that learns with every adjustment</span>
                     </li>
                   </ul>
                 </div>
