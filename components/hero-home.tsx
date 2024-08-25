@@ -109,6 +109,7 @@ export default function HeroHome() {
             </div>
           </div>
           {/* Hero image */}
+          {/* TODO: change to benki scripts */}
           <div
             className="mx-auto max-w-3xl"
             data-aos="zoom-y-out"
