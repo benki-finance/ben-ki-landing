@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "Benki Home",
+  description: "Benki helps M&A teams build CIMs in days, not months. We integrate with your data room to generate drafts for every memo and financial model.",
 };
 
 import Hero from "@/components/hero-home";
@@ -16,7 +16,7 @@ export default function Home() {
       <BusinessCategories />
       <FeaturesPlanet />
       <LargeTestimonial />
-      <Cta />
+      {/* <Cta /> */}
     </>
   );
 }
