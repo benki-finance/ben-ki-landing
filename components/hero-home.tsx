@@ -125,26 +125,28 @@ export default function HeroHome() {
               </div>
               <div className="font-mono text-gray-500 [&_span]:opacity-0">
                 <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
+                  (yourFirm) benki update pnl http://db.tt/v03.xls -rf
                 </span>{" "}
+                <br />
                 <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
+                  --deal_access=/SVB-23/SR_ANALYST
                 </span>
                 <br />
                 <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
+                  --citations=@inline-mla
                 </span>{" "}
+                <br />
                 <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
+                  Generated. View changes or publish?
                 </span>
                 <br />
                 <br />
                 <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
+                  (yourFirm) benki publish cim
                 </span>
                 <br />
                 <span className="animate-[code-6_10s_infinite]">
-                  Package published.
+                  Download as PDF, DOCX, or HTML.
                 </span>
               </div>
             </div>
