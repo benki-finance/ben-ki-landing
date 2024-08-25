@@ -16,7 +16,7 @@ export default function Home() {
       <div className="sm:scale-40 md:scale-70 lg:scale-100">
         <BusinessCategories />
       </div>
-      <FeaturesPlanet />
+      {/* <FeaturesPlanet /> */}
       <Zigzag />
       <Cta />
     </>
