@@ -49,7 +49,7 @@ export default function HeroHome() {
                     <span className="relative inline-flex items-center">
                       Join Waitlist{" "}
                       <span className="ml-1 tracking-normal text-white-600 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
+                        →
                       </span>
                     </span>
                   </button>
