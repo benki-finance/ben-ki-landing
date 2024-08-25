@@ -89,10 +89,11 @@ export default function HeroHome() {
                 >
                   <a
                     className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                    // TODO: add waitlist link
                     href="#0"
                   >
                     <span className="relative inline-flex items-center">
-                      Start Free Trial{" "}
+                      Join Waitlist{" "}
                       <span className="ml-1 tracking-normal text-white-600 transition-transform group-hover:translate-x-0.5">
                         -&gt;
                       </span>
