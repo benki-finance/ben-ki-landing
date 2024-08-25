@@ -75,7 +75,7 @@ export default function Cta() {
               >
                 <Input
                   placeholder="you@firm.com"
-                  className="bg-muted/50 dark:bg-muted/80"
+                  className={`bg-muted/50 dark:bg-muted/80 border p-2 ${formSubmitted ? 'bg-gray-400 cursor-not-allowed' : ''}`}
                   aria-label="email"
                   disabled={formSubmitted}
                 />
