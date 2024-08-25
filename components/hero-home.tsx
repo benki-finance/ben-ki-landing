@@ -3,6 +3,14 @@ import PageIllustration from "@/components/page-illustration";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 export default function HeroHome() {
+  const handleWaitlistClick = () => {
+    document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleLinkedInClick = () => {
+    window.open("https://www.linkedin.com/company/ben-ki/", "_blank");
+  };
+
   return (
     <section className="relative">
       <PageIllustration />
@@ -38,9 +46,9 @@ export default function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
-                  <a
+                  <button
                     className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#waitlist"
+                    onClick={handleWaitlistClick}
                   >
                     <span className="relative inline-flex items-center">
                       Join Waitlist{" "}
@@ -48,10 +56,10 @@ export default function HeroHome() {
                         -&gt;
                       </span>
                     </span>
-                  </a>
+                  </button>
                   <a 
                     className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="https://www.linkedin.com/company/ben-ki/"
+                    onClick={handleLinkedInClick}
                   >
                     Check us out on 
                     <LinkedInLogoIcon className="ml-2 w-5 h-5" />

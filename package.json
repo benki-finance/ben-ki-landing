@@ -28,5 +28,17 @@
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6"
-  }
+  },
+  "description": "AI agent for drafting banking diligence docs",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrarfrahman/ben-ki-landing.git"
+  },
+  "author": "abrarfrahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abrarfrahman/ben-ki-landing/issues"
+  },
+  "homepage": "https://github.com/abrarfrahman/ben-ki-landing#readme"
 }
