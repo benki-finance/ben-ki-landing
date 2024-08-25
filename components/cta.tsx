@@ -5,14 +5,11 @@ import { Input } from "@headlessui/react";
 import { useState } from "react";
 
 export default function Cta() {
-  const [buttonText, setButtonText] = useState('Submit');
+  const [buttonText, setButtonText] = useState('Join Waitlist');
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    
-    setButtonText('Thanks!');
-    setFormSubmitted(true);
 
     const emailInput = e.currentTarget[0] as HTMLInputElement;
     const email = emailInput.value;
@@ -35,6 +32,9 @@ export default function Cta() {
     } catch (error) {
       console.error('Error:', error);
     }
+
+    setButtonText('Submitted');
+    setFormSubmitted(true);
   };
 
   return (
@@ -79,12 +79,9 @@ export default function Cta() {
                   aria-label="email"
                   disabled={formSubmitted}
                 />
-                <span className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto relative inline-flex items-center">
-                  Join Waitlist{" "}
-                  <span className="ml-1 tracking-normal text-emerald-300 transition-transform group-hover:translate-x-0.5">
-                    -&gt;
-                  </span>
-                </span>
+                <button className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto relative inline-flex items-center">
+                  {buttonText}
+                </button>
               </form>
             </div>
           </div>
