@@ -83,9 +83,9 @@ export default function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
-                  <a
+                  <button type="button"
                     className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#waitlist"
+                    ref="#waitlist"
                   >
                     <span className="relative inline-flex items-center">
                       Join Waitlist{" "}
@@ -93,14 +93,14 @@ export default function HeroHome() {
                         -&gt;
                       </span>
                     </span>
-                  </a>
-                  <a
+                  </button>
+                  <button type="button"
                     className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="https://www.linkedin.com/company/ben-ki/"
+                    ref="https://www.linkedin.com/company/ben-ki/"
                   >
                     Check us out on 
                     <LinkedInLogoIcon className="ml-2 w-5 h-5" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
