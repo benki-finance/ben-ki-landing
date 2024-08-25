@@ -48,7 +48,7 @@ export default function SignIn() {
             </div>
           </div>
           <div className="mt-6">
-            <button className="btn w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%]">
+            <button className="btn w-full bg-gradient-to-t from-green-600 to-green-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%]">
               Sign In
             </button>
           </div>
