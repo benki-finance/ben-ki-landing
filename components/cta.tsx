@@ -14,7 +14,7 @@ export default function Cta() {
             className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 translate-y-1/2"
             aria-hidden="true"
           >
-            <div className="h-56 w-[480px] rounded-full border-[20px] border-green-500 blur-3xl" />
+            <div className="h-56 w-[480px] rounded-full border-[20px] border-emerald-500 blur-3xl" />
           </div>
           {/* Stripes illustration */}
           <div
@@ -35,12 +35,12 @@ export default function Cta() {
             </h2>
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
               <a
-                className="btn group mb-4 w-full bg-gradient-to-t from-green-600 to-green-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                 href="#0"
               >
                 <span className="relative inline-flex items-center">
                   Start Free Trial{" "}
-                  <span className="ml-1 tracking-normal text-green-300 transition-transform group-hover:translate-x-0.5">
+                  <span className="ml-1 tracking-normal text-emerald-300 transition-transform group-hover:translate-x-0.5">
                     -&gt;
                   </span>
                 </span>
