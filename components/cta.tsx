@@ -14,7 +14,7 @@ export default function Cta() {
     const emailInput = e.currentTarget[0] as HTMLInputElement;
     const email = emailInput.value;
 
-    if (email.length < 3) {
+    if (email.length > 3) {
       const formData = new FormData();
       formData.append('entry.1228782470', email);
       console.log(formData);
