@@ -18,7 +18,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
             </div>
             */}
             <div className="text-sm text-gray-600">
-              Made with ❤️ in CA <br/>
+              Made with 💚 in CA <br/>
               &copy; 2024 Benki. All rights reserved.
             </div>
           </div>
