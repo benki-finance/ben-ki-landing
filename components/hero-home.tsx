@@ -7,10 +7,6 @@ export default function HeroHome() {
     document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleLinkedInClick = () => {
-    window.open("https://www.linkedin.com/company/ben-ki/", "_blank");
-  };
-
   return (
     <section className="relative">
       <PageIllustration />
@@ -59,7 +55,9 @@ export default function HeroHome() {
                   </button>
                   <a 
                     className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    onClick={handleLinkedInClick}
+                    href="https://www.linkedin.com/company/ben-ki/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Check us out on 
                     <LinkedInLogoIcon className="ml-2 w-5 h-5" />
