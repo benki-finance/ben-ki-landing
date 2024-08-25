@@ -120,7 +120,8 @@ export default function BusinessCategories() {
                 />
               </svg>
             </div>
-            {/* Blue glow */}
+            
+            {/* Green glow */}
             <div className="absolute -z-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -181,8 +182,8 @@ export default function BusinessCategories() {
                   <Image
                     className="relative"
                     src={Logo01}
-                    width={32}
-                    height={32}
+                    width={70}
+                    height={70}
                     alt="Logo 01"
                   />
                 </div>
