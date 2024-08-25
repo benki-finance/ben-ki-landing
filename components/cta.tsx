@@ -1,7 +1,42 @@
+"use client";
 import Image from "next/image";
 import Stripes from "@/public/images/stripes-dark.svg";
+import { Input } from "@headlessui/react";
+import { useState } from "react";
 
 export default function Cta() {
+  const [buttonText, setButtonText] = useState('Submit');
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    
+    setButtonText('Thanks!');
+    setFormSubmitted(true);
+
+    const emailInput = e.currentTarget[0] as HTMLInputElement;
+    const email = emailInput.value;
+
+    const formData = new FormData();
+    formData.append('entry.1228782470', email);
+    console.log(formData);
+
+    try {
+      const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfQNFC_gSYRQj2Zf1DeIDre-Vbw1-huHR8McuK6NRzSbnwF3w/formResponse', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        console.log('Data submitted successfully!');
+      } else {
+        console.error('Failed to submit data:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
   return (
     <section id="waitlist">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -34,18 +69,23 @@ export default function Cta() {
               Unlock seamless end-to-end dilligence
             </h2>
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <a
-                className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                // TODO: add waitlist link
-                href="#0"
+              <form
+                className="flex flex-col w-full md:flex-row md:w-6/12 lg:w-4/12 mx-auto gap-4 md:gap-2"
+                onSubmit={handleSubmit}
               >
-                <span className="relative inline-flex items-center">
+                <Input
+                  placeholder="you@firm.com"
+                  className="bg-muted/50 dark:bg-muted/80"
+                  aria-label="email"
+                  disabled={formSubmitted}
+                />
+                <span className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto relative inline-flex items-center">
                   Join Waitlist{" "}
                   <span className="ml-1 tracking-normal text-emerald-300 transition-transform group-hover:translate-x-0.5">
                     -&gt;
                   </span>
                 </span>
-              </a>
+              </form>
             </div>
           </div>
         </div>
