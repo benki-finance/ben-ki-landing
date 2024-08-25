@@ -6,6 +6,7 @@ import Avatar03 from "@/public/images/avatar-03.jpg";
 import Avatar04 from "@/public/images/avatar-04.jpg";
 import Avatar05 from "@/public/images/avatar-05.jpg";
 import Avatar06 from "@/public/images/avatar-06.jpg";
+import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 export default function HeroHome() {
   return (
@@ -103,7 +104,8 @@ export default function HeroHome() {
                     className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
                     href="https://www.linkedin.com/company/ben-ki/"
                   >
-                    Learn More
+                    Check us out on 
+                    <LinkedInLogoIcon className="ml-2 w-5 h-5" />
                   </a>
                 </div>
               </div>
