@@ -35,6 +35,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="mailto:founders@ben-ki.com"
+                    target="_blank"
                     // TODO: add real auth  
                     // href="/signin"
                     className="btn-sm bg-emerald-600 text-white shadow hover:bg-emerald-200 hover:text-slate-500"
