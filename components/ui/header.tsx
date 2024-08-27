@@ -34,7 +34,7 @@ export default function Header() {
               <ul className="flex flex-1 items-center justify-end gap-3">
                 <li>
                   <Link
-                    href="mailto:founders@benki.com"
+                    href="mailto:founders@ben-ki.com"
                     // TODO: add real auth  
                     // href="/signin"
                     className="btn-sm bg-emerald-600 text-white shadow hover:bg-emerald-200 hover:text-slate-500"
