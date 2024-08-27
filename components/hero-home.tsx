@@ -25,8 +25,8 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Intelligent <div className="inline bg-gradient-to-r from-[#36d391] via-[#78716c] to-[#065f46] text-transparent bg-clip-text animate-gradient">live memos</div> for <br className="max-lg:hidden" />
-              banking due diligence
+              Intelligent <span className="inline bg-gradient-to-r from-[#36d391] via-[#78716c] to-[#065f46] text-transparent bg-clip-text animate-gradient">live memos</span> for <br className="max-lg:hidden" />
+              banking <span className="inline ">due diligence</span>
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
