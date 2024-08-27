@@ -26,7 +26,7 @@ export default function HeroHome() {
               data-aos-delay={150}
             >
               Intelligent <span className="inline bg-gradient-to-r from-[#36d391] via-[#78716c] to-[#065f46] text-transparent bg-clip-text animate-gradient">live memos</span> for <br className="max-lg:hidden" />
-              banking <span className="inline ">due diligence</span>
+              banking <span className="inline hover:text-emerald-600">due diligence</span>
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -43,7 +43,7 @@ export default function HeroHome() {
                   data-aos-delay={450}
                 >
                   <button
-                    className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                    className="btn group mb-4 w-full bg-gradient-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg- hover:bg-emerald-500 sm:mb-0 sm:w-auto"
                     onClick={handleWaitlistClick}
                   >
                     <span className="relative inline-flex items-center">

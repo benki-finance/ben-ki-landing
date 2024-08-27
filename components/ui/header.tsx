@@ -34,12 +34,12 @@ export default function Header() {
               <ul className="flex flex-1 items-center justify-end gap-3">
                 <li>
                   <Link
-                    href="#waitlist"
+                    href="mailto:founders@benki.com"
                     // TODO: add real auth  
                     // href="/signin"
-                    className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
+                    className="btn-sm bg-emerald-600 text-white shadow hover:bg-emerald-200 hover:text-slate-500"
                   >
-                    Coming Soon →
+                    Contact Us →
                   </Link>
                 </li>
                 {/*
@@ -58,6 +58,7 @@ export default function Header() {
             </div>
           </div>
         </header>
+        
       }
     </>
   );
