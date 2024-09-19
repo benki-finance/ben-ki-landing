@@ -40,7 +40,7 @@ export default function Header() {
                     // href="/signin"
                     className="btn-sm bg-emerald-600 text-white shadow hover:bg-emerald-200 hover:text-slate-500"
                   >
-                    Contact Us →
+                    Request Demo →
                   </Link>
                 </li>
                 {/*
