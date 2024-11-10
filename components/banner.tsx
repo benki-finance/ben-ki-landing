@@ -12,23 +12,21 @@ export default function Banner() {
           <div className="flex justify-between bg-slate-800 p-3 text-sm text-slate-50 shadow-lg md:rounded">
             <div className="inline-flex text-slate-500">
               <a
-                className="font-medium text-slate-50 hover:underline"
-                // TODO: change to benki.com
-                href="https://github.com/cruip/tailwind-landing-page-template"
+                className="font-medium text-purple-400 hover:underline"
+                href="https://discord.gg/PJyyWSvW"
                 target="_blank"
                 rel="noreferrer"
               >
-                Download<span className="hidden sm:inline"> on GitHub</span>
+                Join our<span className="hidden sm:inline"> Discord</span>
               </a>{" "}
               <span className="px-1.5 italic">or</span>{" "}
               <a
-                className="font-medium text-emerald-400 hover:underline"
-                // TODO: change to benki.com
-                href="https://cruip.com/simple/"
+                className="font-medium text-emerald-600 hover:underline"
+                href="https://forms.gle/wLc1gNoKZ1ooy3mbA"
                 target="_blank"
                 rel="noreferrer"
               >
-                Check Premium Version
+                Join our Waitlist
               </a>
             </div>
             <button

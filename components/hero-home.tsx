@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import PageIllustration from "@/components/page-illustration";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
+import Banner from "@/components/banner";
 
 export default function HeroHome() {
   const handleWaitlistClick = () => {
@@ -10,9 +11,9 @@ export default function HeroHome() {
 
   const phrases = [
     "due diligence",
-    "sourcing",
+    "sourcing 💼",
     "risk analysis",
-    "upskilling",
+    "upskilling 🧠",
     "compliance"
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,7 +38,8 @@ export default function HeroHome() {
             {/* TODO
               <Avatar /> 
             */}
-            
+            <Banner />
+
             <h1
               className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
               data-aos="zoom-y-out"
@@ -68,7 +70,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Benki helps M&A teams build CIMs in days, not months. We integrate with your data room to generate drafts for every memo and financial model.
+                Unlock unparalleled control with real-time model steering that adapts AI to your needs, delivering faster CIMs, more precise financial models, and a transparent audit trail for every decision.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
                 <div
