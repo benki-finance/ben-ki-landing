@@ -41,17 +41,17 @@ export default function HeroHome() {
             <Banner />
 
             <h1
-              className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
+              className="mb-6 border-y text-4xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
               Interpretable <span className="inline bg-gradient-to-r from-[#36d391] via-[#78716c] to-[#065f46] text-transparent bg-clip-text animate-gradient">artificial intelligence</span> <br className="max-lg:hidden" />
-              for M&A{' '}
+              for M&A → {' '}
               <span className="inline-block relative min-w-[280px]"> {/* Fixed width container */}
                 {phrases.map((phrase, index) => (
                   <span
                     key={index}
-                    className={`absolute max-md:left-1/2 max-md:-translate-x-1/2 ${
+                    className={`absolute whitespace-nowrap max-md:left-1/4 max-md:-translate-x-1/4 ${
                       index === currentIndex 
                         ? 'opacity-100 transform-none transition-all duration-300' 
                         : 'opacity-0 translate-y-3'
@@ -70,7 +70,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Unlock unparalleled control with real-time model steering that adapts AI to your needs, delivering faster CIMs, more precise financial models, and a transparent audit trail for every decision.
+                Unlock unparalleled control with model steering that adapts AI to your needs, delivering smoother deals and a transparent audit trail for every decision.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
                 <div
