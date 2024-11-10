@@ -17,7 +17,7 @@ export default function Banner() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Join our<span className="hidden sm:inline"> Discord</span>
+                Join our Discord
               </a>{" "}
               <span className="px-1.5 italic">or</span>{" "}
               <a
