@@ -70,7 +70,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Unlock unparalleled control of financial AI, delivering faster deals and transparent audit trails for every decision.
+                Unlock unparalleled control of financial AI, delivering faster deals and transparent audit trails to bring confidence back to every deal
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
                 <div
