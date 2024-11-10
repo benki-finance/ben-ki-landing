@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {!isMobile && <BusinessCategories />}
       <Zigzag />
+      {!isMobile && <BusinessCategories />}
       <Cta />
     </>
   );

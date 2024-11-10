@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from 'react';
 import PageIllustration from "@/components/page-illustration";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 
@@ -6,6 +7,23 @@ export default function HeroHome() {
   const handleWaitlistClick = () => {
     document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const phrases = [
+    "due diligence",
+    "sourcing",
+    "risk analysis",
+    "upskilling",
+    "compliance"
+  ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
 
   return (
     <section className="relative">
@@ -25,9 +43,25 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Intelligent <span className="inline bg-gradient-to-r from-[#36d391] via-[#78716c] to-[#065f46] text-transparent bg-clip-text animate-gradient">live memos</span> for <br className="max-lg:hidden" />
-              banking <span className="inline hover:text-emerald-600">due diligence</span>
+              Interpretable <span className="inline bg-gradient-to-r from-[#36d391] via-[#78716c] to-[#065f46] text-transparent bg-clip-text animate-gradient">artificial intelligence</span> <br className="max-lg:hidden" />
+              for M&A{' '}
+              <span className="inline-block relative min-w-[280px]"> {/* Fixed width container */}
+                {phrases.map((phrase, index) => (
+                  <span
+                    key={index}
+                    className={`absolute max-md:left-1/2 max-md:-translate-x-1/2 ${
+                      index === currentIndex 
+                        ? 'opacity-100 transform-none transition-all duration-300' 
+                        : 'opacity-0 translate-y-3'
+                    }`}
+                  >
+                    {phrase}
+                  </span>
+                ))}
+                <span className="invisible">{phrases[0]}</span> {/* Maintains spacing */}
+              </span>
             </h1>
+            <br/>
             <div className="mx-auto max-w-3xl">
               <p
                 className="mb-8 text-lg text-gray-700"
