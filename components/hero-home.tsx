@@ -91,7 +91,7 @@ export default function HeroHome() {
                     </span>
                   </button>
                   <a 
-                    className="w-fullshadow hover:bg-gray-50 sm:ml-4 sm:w-auto" 
+                    className="inline-flex items-center justify-center shadow hover:bg-gray-50 sm:ml-4 sm:w-auto items-center" 
                     href="https://www.producthunt.com/posts/benki?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-benki" 
                     target="_blank" >
                       <Image src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=596382&theme=light" 
