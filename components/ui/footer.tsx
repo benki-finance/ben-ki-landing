@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./logo";
+import Image from "next/image";
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (
@@ -13,8 +14,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
           
           <div className="space-y-2 sm:col-span-12 lg:col-span-4">
             
-            <div>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
               <Logo />
+              <Link href="https://c2pa.org/" className="inline-flex" target="_blank" aria-label="Coalition for Content Provenance and Authenticity"><Image src={"https://c2pa.org/images/logo.svg"}  width={50} height={50} alt="C2PA" /></Link>
             </div>
             
             <div className="text-sm text-gray-600">

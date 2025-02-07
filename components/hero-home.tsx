@@ -86,7 +86,7 @@ export default function HeroHome() {
                     <span className="relative inline-flex items-center">
                       Join Waitlist{" "}
                       <span className="ml-1 tracking-normal text-white-600 transition-transform group-hover:translate-x-0.5">
-                        →
+                        →x
                       </span>
                     </span>
                   </button>
@@ -95,7 +95,8 @@ export default function HeroHome() {
                     href="https://www.producthunt.com/posts/benki?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-benki" 
                     target="_blank" >
                       <Image src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=596382&theme=light" 
-                        alt="Benki - Interpretable&#0032;Artificial&#0032;Intelligence&#0032;for&#0032;M&#0038;A | Product Hunt" width="250" height="54" /></a>
+                        alt="Benki - Interpretable&#0032;Artificial&#0032;Intelligence&#0032;for&#0032;M&#0038;A | Product Hunt" width="250" height="54" />
+                  </a>
                   <a 
                     className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
                     href="https://www.linkedin.com/company/ben-ki/"
