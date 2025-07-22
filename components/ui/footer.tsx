@@ -16,7 +16,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
             
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
               <Logo />
-              <Link href="https://c2pa.org/" className="inline-flex" target="_blank" aria-label="Coalition for Content Provenance and Authenticity"><Image src={"https://c2pa.org/images/logo.svg"}  width={50} height={50} alt="C2PA" /></Link>
+              <Link href="https://c2pa.org/" className="inline-flex" target="_blank" aria-label="Coalition for Content Provenance and Authenticity"><Image src={"https://c2pa.org/wp-content/uploads/sites/33/2025/05/c2pa_logo.svg"}  width={175} height={75} alt="C2PA" /></Link>
             </div>
             
             <div className="text-sm text-gray-600">

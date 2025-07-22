@@ -4,6 +4,7 @@ import Hero from "@/components/hero-home";
 import BusinessCategories from "@/components/business-categories";
 import Cta from "@/components/cta";
 import Zigzag from "@/components/zigzag";
+import { Experts } from "@/components/experts";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Experts />
       <Zigzag />
       {!isMobile && <BusinessCategories />}
       <Cta />
